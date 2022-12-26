@@ -19,7 +19,9 @@ MQTT 브로커의 종류는 mosquitto를 사용하였고, 기본 동작은 local
 </br>
 </br>
 </br>
+
 ## Data Page
+
 ![web_data PNG](https://user-images.githubusercontent.com/98437996/209537857-a49a3b2f-7dbd-412e-880e-e93ccf065542.png)
 * Data Page의 경우 이전 데이터를 불러와 원하는 시간대의 데이터를 확인하는 것입니다.
 * 종류와 날짜를 지정하지 않거나 혹은 데이터가 없는 날짜를 선택하면 경고창을 발생시킵니다.
@@ -30,7 +32,9 @@ query하여 데이터를 뽑아옵니다.
 </br>
 </br>
 </br>
+
 ## CCTV Page
+
 ![web_cctv](https://user-images.githubusercontent.com/98437996/209537878-eef48e96-209a-4f53-b912-42f0fd1c1b1b.png)
 * CCTV Page는 온실 속 환경을 실시간 스트리밍합니다.
 * 카메라의 버튼을 누르면 Raspberry PI에게 알리고 지속적으로 이미지 프레임을 받아와 갱신해 줍니다.
@@ -38,7 +42,9 @@ query하여 데이터를 뽑아옵니다.
 </br>
 </br>
 </br>
+
 ## Control Page
+
 ![web_control PNG](https://user-images.githubusercontent.com/98437996/209537902-ca535dba-1c0b-4ff7-b80d-42e12be8695d.png)
 * Raspberry PI의 연결된 PIN들을 제어합니다.
 * 저희 프로젝트에서는 Water Pump의 동작은 한개씩 동작하기 때문에 Water Pump작동 시에는 정해진 시간동안 다른 행동을
