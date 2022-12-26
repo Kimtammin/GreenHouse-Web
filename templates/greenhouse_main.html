@@ -1,0 +1,111 @@
+{% extends 'base.html'%}
+{% block title %} 실시간 모니터링 {% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">
+{% endblock %}
+
+{% block content%}
+    <div class="sm-box sm1">
+        <h3> 외부 </h3>
+        <div class="box-1 box-content">
+            <div class="box-img">
+                <img src="{{ url_for('static', filename='image/thermomete.png')}}" style="width:100px; height:100px;">
+            </div>
+            <div class="box-text">
+                <p>온도</p>
+                <p id = "sm1-tem">0</p>
+            </div>
+        </div>
+        <div class="box-2 box-content">
+            <div class="box-img">
+                <img src="{{ url_for('static', filename='image/Humidity.png')}}" style="width:100px; height:100px;">
+            </div>
+            <div class="box-text">
+                <p>습도</p>
+                <p id = "sm1-hum">0</p>
+            </div>
+        </div>
+       
+    </div>
+    <div class="sm-box sm2">
+        <h3> 내부 </h3>
+        <div class="box-1 box-content">
+            <div class="box-img">
+                <img src="{{ url_for('static', filename='image/thermomete.png')}}" style="width:100px; height:100px;">
+            </div>
+            <div class="box-text">
+                <p>온도</p>
+                <p id = "sm2-tem">0</p>
+            </div>
+        </div>
+        <div class="box-2 box-content">
+            <div class="box-img">
+                <img src="{{ url_for('static', filename='image/Humidity.png')}}" style="width:100px; height:100px;">
+            </div>
+            <div class="box-text">
+                <p>습도</p>
+                <p id = "sm2-hum">0</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="sm-box sm3">
+        <h3> 수분량 </h3>
+        <div class="box-1 box-content">
+            <div class="box-img">
+                <img src="{{ url_for('static', filename='image/soil.png')}}" style="width:100px; height:100px;">
+            </div>
+            <div class="box-text">
+                <p>상추</p>
+                
+                <p id = "sm3-soil">0</p>
+            </div>
+        </div>
+        <div class="box-2 box-content">
+            <div class="box-img">
+                <img src="{{ url_for('static', filename='image/soil.png')}}" style="width:100px; height:100px;">
+            </div>
+            <div class="box-text">
+                <div>
+                <p>청경채</p>
+                
+            </div>
+                <p id = "sm3-soil2">0</p>
+            </div>
+        </div>
+            <div class="box-3 box-content">
+                <div class="box-img">
+                    <img src="{{ url_for('static', filename='image/water.png')}}" style="width:100px; height:100px;">
+                </div>
+                <div class="box-text">
+                    <p>물의 양</p>
+                    <p id = "sm3-water">양호</p>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="button_mostion">
+        <div class="wrap data">
+            <a class="button_a" href="{{ url_for('data')}}"><span>DATA</span></a>
+        </div>
+        <div class="wrap cctv">
+            <a class="button_a" href="{{ url_for('cctv')}}"><span>CCTV</span></a>
+        </div>
+        <div class="wrap control">
+            <a class="button_a" href="{{ url_for('control')}}"><span>CONTROL</span></a>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block footer %}
+    <script SRC="{{ url_for('static' , filename='js/main.js')}}">
+
+    </script>
+    <script type="text/javascript">
+        MQTTConnect();
+    </script>
+{% endblock %}

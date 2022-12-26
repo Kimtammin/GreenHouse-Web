@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+
+
+
+{% block title %}제어{% endblock%}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/control.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="control-box">
+        <fieldset>
+            <legend>Control</legend>
+            <div class="control">
+            <span class="text">온실 LED<button class="custom-btn btn-3" id="LED_btn"><span id="LED">LED OFF</span></button></span>
+            <span class="text">온실 Cooling Fan<button class="custom-btn btn-3" id="cooling_btn"><span id="cooling">Cooling Fan OFF</span></button></span>
+            </div>
+            <div class="control2">
+                <span class="text">상추 물 공급<button class="custom-btn btn-3" id="water1_btn"><span id="water1">Water Pump OFF</span></button></span>
+                <span class="text">청경채 물 공급<button class="custom-btn btn-3" id="water2_btn"><span id="water2">Water Pump OFF</span></button></span>
+            </div>
+         </fieldset>   
+        
+{% endblock %}
+
+{% block footer %}
+<script SRC="{{ url_for('static' , filename='js/control.js')}}">
+</script>
+<script SRC="{{ url_for('static' , filename='js/control_onclick.js')}}">
+</script>
+<script type="text/javascript">
+    MQTTConnect();
+</script>
+{% endblock %}

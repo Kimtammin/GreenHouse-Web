@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}실시간 스트리밍{% endblock%}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/cctv.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="box box-1">
+            
+        <div class="cctv_box">
+            <div class="cctv" id="cctv">
+                <img src="" class="cctv_img" id="cctv_img1">
+            </div>
+        </div>
+    
+    </div>
+    <div class="box box-2">
+        <div class="toggle_div"> 
+                        
+            <div><button class="custom-btn btn-3" id="cctv_btn"><span id="cctv_text">CAM OFF</span></button></div>
+
+            <div><span class="slider"><input type="range" min="0" max="10" value="0" id="sl" onchange="sendValue()"></span></div>
+        </div>             
+        
+    </div>
+</div>
+        
+{% endblock %}
+
+{% block footer %}
+<script src="{{ url_for('static' , filename='js/cctv.js')}}">
+
+</script>
+<script type="text/javascript">
+    MQTTConnect();
+</script>
+{% endblock %}

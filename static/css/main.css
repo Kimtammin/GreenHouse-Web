@@ -1,0 +1,108 @@
+.sm-box{
+    display:inline-block;
+    width:300px;
+    height:350px;
+    margin-top:40px;
+    margin-left:35px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 20px rgba(66, 66, 66, 0.829);
+    border-radius: 15%;
+    text-align: center;
+}
+
+.sm3{
+  width:450px;
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    text-align: center;
+    
+}
+
+.box-content{
+    width : 100px;
+    height : 220px;
+    border-radius: 30%;
+    
+    display: inline-block;
+    box-shadow: -10px 10px 10px rgba(167 243 208),10px -10px 10px rgba(167 243 208);
+    text-align: center;
+}
+
+.box-1{
+  margin-right:30px;
+}
+
+.box-3{
+  margin-left:30px;
+}
+
+.box-content:nth-chile(3){
+  margin-left:20px;
+}
+
+.box-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.button_mostion{
+    height:200px;
+    margin-top:30px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    
+    font-style: italic;
+    
+}
+
+.wrap {
+    width:150px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    margin-top : 50px;
+    margin-left : 10px;
+  }
+
+.button_a {
+    width: 130px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: -10px 10px 10px rgba(167 243 208),10px -10px 10px rgba(167 243 208);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    text-decoration: none;
+    margin-left:10px;
+    }
+  
+  .button_a:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+  span{
+    position: relative;
+    top: 30%;
+  }

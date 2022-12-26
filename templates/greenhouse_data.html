@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %} 데이터 조회 {% endblock%}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/data.css')}}">
+{% endblock %}
+
+{% block content%}
+<div class="date-box">
+    <select id="category">
+        <option value="default" selected>선택</option>
+        <option value="lettuce">lettuce</option>
+        <option value="choy">choy</option>
+    </select>
+    <input type="date" name="startday" id="date">
+    <input type="button" name="button" id="date_button" value="확인">
+</div>
+
+<div class="data_list">
+    <table class="value_table" id="value_table">
+        <thead>
+            <th class="datetime">시간</th>
+            <th>온도</th>
+            <th>습도</th>
+            <th>토양수분</th>
+            <th>상태</th>
+        </thead>
+        <tbody id="table_body">
+
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+    <script SRC="{{ url_for('static' , filename='js/data.js')}}">
+
+    </script>
+    <script type="text/javascript">
+        MQTTConnect();
+    </script>
+{% endblock %}

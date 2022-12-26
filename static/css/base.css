@@ -1,0 +1,55 @@
+html, body{
+    width:1500px;
+    height:1000px;
+    margin:0;
+}
+
+
+.back{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../image/cool-background.png');
+    height:100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black ;
+    
+  
+}
+.container{
+    background-image:url('../image/cool-background.png');
+    background-size: cover;
+    width : 1200px;
+    height : 700px;
+    margin :auto;
+    position:absolute;
+    top:8%;
+    left:10%;
+    border-radius: 4%;
+    box-shadow: 5px 5px 10px black;  
+    
+}
+
+
+
+.header{
+    text-align: center;
+    margin-top : 20px;
+}
+
+
+
+.header > a{
+    text-decoration-line: none;
+    color: inherit;
+
+}
+
+.header-text{
+    font-family: 'Lato', sans-serif;
+    margin-left:4px;
+        font-weight: 600;
+        color: #fffefe;
+        font-size: 50px;
+        text-shadow: 6px 2px 2px gray;
+}
