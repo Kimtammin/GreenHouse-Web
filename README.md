@@ -20,7 +20,7 @@ MQTT 브로커의 종류는 mosquitto를 사용하였고, 기본 동작은 local
 </br>
 </br>
 ## Data Page
-![web_data PNG](https://user-images.githubusercontent.com/98437996/209532920-4274805c-7e4c-4420-9472-ebf0ecdd567a.png)
+![web_data PNG](https://user-images.githubusercontent.com/98437996/209537857-a49a3b2f-7dbd-412e-880e-e93ccf065542.png)
 * Data Page의 경우 이전 데이터를 불러와 원하는 시간대의 데이터를 확인하는 것입니다.
 * 종류와 날짜를 지정하지 않거나 혹은 데이터가 없는 날짜를 선택하면 경고창을 발생시킵니다.
 * 데이터베이스의 경우 Raspberry PI에서 InfluxDB를 사용합니다.
@@ -31,7 +31,7 @@ query하여 데이터를 뽑아옵니다.
 </br>
 </br>
 ## CCTV Page
-![web_cctv](https://user-images.githubusercontent.com/98437996/209533388-a63c8978-b4df-4194-ab7b-027f99580540.png)
+![web_cctv](https://user-images.githubusercontent.com/98437996/209537878-eef48e96-209a-4f53-b912-42f0fd1c1b1b.png)
 * CCTV Page는 온실 속 환경을 실시간 스트리밍합니다.
 * 카메라의 버튼을 누르면 Raspberry PI에게 알리고 지속적으로 이미지 프레임을 받아와 갱신해 줍니다.
 * 아래 슬라이더는 현재 사진에서 더 자세하게 보고싶을 때 확대하는 기능이며, base64 인코딩 방식을 사용합니다.
@@ -39,7 +39,7 @@ query하여 데이터를 뽑아옵니다.
 </br>
 </br>
 ## Control Page
-![web_control PNG](https://user-images.githubusercontent.com/98437996/209533732-0dd8cb43-4d39-41da-8b70-93bfb0c6c74b.png)
+![web_control PNG](https://user-images.githubusercontent.com/98437996/209537902-ca535dba-1c0b-4ff7-b80d-42e12be8695d.png)
 * Raspberry PI의 연결된 PIN들을 제어합니다.
 * 저희 프로젝트에서는 Water Pump의 동작은 한개씩 동작하기 때문에 Water Pump작동 시에는 정해진 시간동안 다른 행동을
 취할 수 없습니다.
