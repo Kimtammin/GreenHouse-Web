@@ -1,7 +1,5 @@
 # GreenHouse-Web
 SmartFarm Project - GreenHouse Web 
-# GreenHouse-Web
-SmartFarm Project - GreenHouse Web 
 </br>
 </br>
 </br>
